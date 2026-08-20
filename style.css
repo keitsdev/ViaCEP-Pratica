@@ -1,0 +1,22 @@
+main{
+    align-items: center;
+    box-shadow: 5px 5px 15px 0px rgb(65, 16, 110);
+    border-radius: 8px;
+    background-color: rgb(169, 124, 211);
+}
+
+body{
+    color: rgb(65, 16, 110);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+input{
+    border-radius: 20px;
+    border-style: none;
+    border-color: rgb(65, 16, 110);
+    box-shadow: rgb(93, 62, 122);
+    width: 200px;
+    font-family: cursive;
+    font-size: 20px;
+}
