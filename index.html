@@ -9,23 +9,53 @@
 </head>
 <body>
     <main>
-        <center>
-            <form method="get" action=".">
-                <label>Cep:
+
+        <h1>Descubra seu endereço!</h1>
+
+        <form method="get" action="." id="card">
+
+            <div class="form-group">
+                <label>Cep:</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                   onblur="pesquisacep(this.value);" /></label><br />
-                <label>Rua:
-                <input name="rua" type="text" id="rua" size="60" /></label><br />
-                <label>Bairro:
-                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-                <label>Cidade:
-                <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-                <label>Estado:
-                <input name="uf" type="text" id="uf" size="2" /></label><br />
-                <label>IBGE:
-                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
-            </form>
-        </center>
+                    onblur="pesquisacep(this.value);" />
+            </div>
+            
+            <div class="form-group">
+                <label>Rua:</label>
+                <input name="rua" type="text" id="rua" size="60" />
+            </div>
+            
+            <div class="form-group">
+                <label>Bairro:</label>
+                <input name="bairro" type="text" id="bairro" size="40" />
+            </div>
+            
+            <div class="form-group">
+                <label>Cidade:</label>
+                <input name="cidade" type="text" id="cidade" size="40" />
+            </div>
+
+            <div class="form-group">
+                <label>Estado:</label>
+                <input name="uf" type="text" id="uf" size="2"/>
+            </div>
+
+            <div class="form-group">
+                <label>IBGE:</label>
+                <input name="ibge" type="text" id="ibge" size="8" />
+            </div>
+
+            <div>
+                <div class="btn">
+                    <button type="button" onclick="meu_callback(conteudo)">Buscar Endereço</button>
+                </div>
+
+                <div class="btn">
+                    <button type="button" onclick="limpa_formulário_cep()">Limpar Formulário</button>
+                </div>
+            </div>
+
+        </form>
     </main>
 </body>
 </html>
